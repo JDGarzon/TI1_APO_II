@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="285.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerRegistererController">
+   <top>
+      <Label text="Add a customer to a function" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="name" layoutX="62.0" layoutY="37.0" />
+            <TextField fx:id="id" layoutX="62.0" layoutY="82.0" />
+            <Label layoutX="61.0" layoutY="18.0" text="Name" />
+            <Label layoutX="61.0" layoutY="64.0" text="ID" />
+            <Button layoutX="144.0" layoutY="181.0" mnemonicParsing="false" onAction="#save" text="Guardar" />
+            <Button layoutX="210.0" layoutY="181.0" mnemonicParsing="false" onAction="#close" text="Cancelar" />
+            <ComboBox fx:id="selectAFunction" layoutX="72.0" layoutY="147.0" prefWidth="150.0" promptText="Select function" />
+            <RadioButton fx:id="middle" layoutX="46.0" layoutY="123.0" mnemonicParsing="false" onAction="#rbMddle" text="Middle Room" />
+            <RadioButton fx:id="mini" layoutX="152.0" layoutY="123.0" mnemonicParsing="false" onAction="#rbMini" text="Mini Room" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
